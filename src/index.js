@@ -1,2 +1,4 @@
 import "./styles.css";
-console.log("yo");
+import { loadHome } from "./home.js"
+
+loadHome();
