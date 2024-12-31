@@ -1,4 +1,23 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root{
-  background-color: rgb(22, 22, 90);
+  background-color: #2d2b2c;
+}
+
+header {
+
+  >nav{
+
+    >img{
+
+      &.logo{
+        width: 200px;
+      }
+    }
+  }
 }
