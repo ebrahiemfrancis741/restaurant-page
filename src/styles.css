@@ -52,29 +52,33 @@ header {
 }
 
 div#content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(211, 210, 210);
-  padding: 48px 0px 48px 0px;
-  gap: 100px;
-  margin-bottom: 48px;
 
-  >p{
-    font-family: "ubuntu-italic";
-    font-size: 1.3rem;
-  }
-
-  >div{
+  >div.home-tab{
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 210, 210);
+    padding: 48px 0px 48px 0px;
+    gap: 100px;
+    margin-bottom: 48px;
+
     >p{
-      width: 45ch;
+      font-family: "ubuntu-italic";
+      font-size: 1.3rem;
     }
 
-    >img{
-      width: 500px;
-      border-radius: 4px;
+    >div{
+      display: flex;
+      gap: 16px;
+
+      >p{
+        width: 45ch;
+      }
+
+      >img{
+        width: 500px;
+        border-radius: 4px;
+      }
     }
   }
 }
