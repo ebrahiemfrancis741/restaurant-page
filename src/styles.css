@@ -1,8 +1,25 @@
 
+@font-face {
+  font-family: "ubuntu-light";
+  src: url("fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "charmonman-regular";
+  src: url("fonts/Charmonman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "ubuntu-italic";
+  src: url("fonts/Ubuntu-Italic.ttf");
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 24px;
+  font-family: "ubuntu-light";
 }
 
 :root{
@@ -10,14 +27,54 @@
 }
 
 header {
-
+  /* margin-bottom: 48px; */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
   >nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
 
+    >button{
+      background-color: #2d2b2c;
+      border: 0;
+      font-family: "charmonman-regular";
+      font-size: 1.5rem;
+    }
     >img{
 
       &.logo{
-        width: 200px;
+        width: 250px;
       }
+    }
+  }
+}
+
+div#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(211, 210, 210);
+  padding: 48px 0px 48px 0px;
+  gap: 100px;
+  margin-bottom: 48px;
+
+  >p{
+    font-family: "ubuntu-italic";
+    font-size: 1.3rem;
+  }
+
+  >div{
+    display: flex;
+    gap: 16px;
+    >p{
+      width: 45ch;
+    }
+
+    >img{
+      width: 500px;
+      border-radius: 4px;
     }
   }
 }
