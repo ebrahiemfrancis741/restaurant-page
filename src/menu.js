@@ -2,7 +2,7 @@
 let menu  = [
   // signature dishes
   {
-    category: "Signature Dished",
+    category: "Signature Dishes",
     menuItems: [
       {
         name: "Golden Beet Tartare",
@@ -83,5 +83,36 @@ let menu  = [
 ]
 
 export function loadMenu(){
+  let contentContainer = document.querySelector("#content");
+  let menuTab = document.createElement("div");
+  menuTab.classList = "menu-tab";
+  contentContainer.appendChild(menuTab);
 
+  let menuCategory, menuList, menuItem;
+  let menuItemName, menuItemDescription;
+
+  for(let i = 0; i < menu.length; i++){
+    menuCategory = document.createElement("h2");
+    menuCategory.textContent = menu[i].category;
+    menuCategory.classList = "menu-category"
+    menuTab.appendChild(menuCategory);
+
+    menuList = document.createElement("div");
+    menuList.classList = "menu-list";
+    menuTab.appendChild(menuList);
+
+    for(let j = 0; j < menu[i].menuItems.length; j++){
+      menuItem = document.createElement("div");
+      menuItem.classList = "menu-item";
+      menuList.appendChild(menuItem);
+
+      menuItemName = document.createElement("h3");
+      menuItemName.textContent = menu[i].menuItems[j].name;
+      menuItem.appendChild(menuItemName);
+
+      menuItemDescription = document.createElement("p");
+      menuItemDescription.textContent = menu[i].menuItems[j].description;
+      menuItem.appendChild(menuItemDescription);
+    }
+  }
 }

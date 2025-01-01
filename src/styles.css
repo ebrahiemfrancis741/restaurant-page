@@ -101,6 +101,9 @@ div#content{
       display: flex;
       padding: 36px;
       justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
 
       >div.menu-item{
         border: 1px solid #2d2b2c;
@@ -120,7 +123,7 @@ div#content{
         }
 
         >p{
-          font-size: 0.7rem;
+          font-size: 0.6rem;
           color: #d3d2d2;
           font-weight: bold;
           letter-spacing: 0.1rem;
