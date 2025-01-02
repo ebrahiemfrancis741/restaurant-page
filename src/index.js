@@ -4,7 +4,6 @@ import { loadMenu } from "./menu.js";
 import { loadContact } from "./contact.js";
 
 loadHome();
-// loadMenu();
 
 (function setupEventListeners(){
   let contentContainer = document.querySelector("#content");
